@@ -2,8 +2,21 @@ package sample;
 import java.sql.*;
 
 public class DBinteract {
+    /**
+     *<h1>Class DBinteract</h1>
+     *
+     * This class handles alll interactions with the database:connecting,updating and reading data.
+     */
 
     public void update (String acc,String amt){
+        /**
+         *<h2>Method update</h2>
+         * This method updates the balance in the respective account.
+         *
+         * @param acc,the account to which the money is to be deposited in.
+         * @param amt,amount which is to be updated.
+         *
+         */
         int acc1 = Integer.parseInt(acc);
         int amt1=Integer.parseInt(amt);
 
@@ -51,6 +64,12 @@ public class DBinteract {
     }
 
     private boolean authenticate (int acc){
+        /**
+         * <h2>Method Authenticate</h2>
+         * Method is to authenticate whether account number entered is valid.
+         *
+         * @param acc,account number to be validated.
+         */
         boolean authenticate=false;
         try (Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost/bank", "root", "122448")) {
@@ -78,6 +97,12 @@ public class DBinteract {
     }
 
     private int read(int acc){
+        /**
+         * <h2>Method read</h2>
+         *Reads the current balance.
+         *
+         * @param acc,account from which data is to be read from.
+         */
         int curBal=0;
 
         try (Connection conn = DriverManager.getConnection(

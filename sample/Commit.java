@@ -10,11 +10,30 @@ import javafx.stage.Stage;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * <h1>Commit class</h1>
+ * This class holds the interface to prompt the user to either commit or rollback changes to the database.
+ *
+ *
+ */
+
 public class Commit {
     public static boolean display(String acc,String amt) {
+        /**
+         * Method display
+         *
+         *This method pops up an interface to confirm the users decision on the transaction.Returns a boolean value to verify rollback or commit.
+         * @param String acc,account number.
+         * @param String amt,cash amount of transaction.
+         *
+         *
+         */
         AtomicBoolean commit= new AtomicBoolean(true);
         Stage window = new Stage();
 
+        window.setOnCloseRequest(e->{
+            commit.set(false);
+        });
         //Block events to other windows
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle("You sure G?");

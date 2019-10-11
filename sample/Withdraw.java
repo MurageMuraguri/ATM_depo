@@ -13,6 +13,10 @@ import javafx.stage.Stage;
 
 
 public class Withdraw {
+    /**
+     * <h1>Class Withdraw</h1>
+     * This is the controller class for the main interface.
+     */
     public Text heading1;
     public Text heading2;
     public Button CANCEL;
@@ -28,7 +32,12 @@ public class Withdraw {
 // force the field to be numeric only
 
     public void handleButtonAction( ActionEvent event) {
-
+/**
+ *
+ * <h2>Method handleButtonAction</h2>
+ *Handles events.
+ *
+ */
 
         if(event.getSource() == DEPOSIT) //This condition is triggered when enter button is pressed
         {
@@ -42,7 +51,7 @@ public class Withdraw {
                 String message="Enter Valid data types";
 
                 Alert a1 =new Alert();
-                a1.display(title,message);
+                Alert.display(title,message);
 
             }
             else{
