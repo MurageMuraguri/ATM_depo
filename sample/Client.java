@@ -4,6 +4,10 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
 public class Client {
+  /**
+  *<h1>Class Client</h1>
+  *This class implements the client side of the distributed system.
+  */
     private Client() {}
     public static void main(String[] args) {
         try {

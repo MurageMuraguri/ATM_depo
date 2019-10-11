@@ -6,6 +6,10 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 public class Server extends Main {
+  /**
+  *<h1>Class Server</h1>
+  *This class implements the server side of the distributed system.
+  */
     public Server() {}
     public static void main(String args[]) {
         try {
