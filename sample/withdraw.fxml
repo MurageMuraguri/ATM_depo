@@ -10,17 +10,23 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="sample.Withdraw"
-            prefHeight="400.0" prefWidth="600.0">
+            prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: #fffdd0;"
+>
 
     <children>
-        <Text fx:id="heading2" layoutX="1.0" layoutY="50.0" textAlignment="JUSTIFY" text="ACCOUNT:" />
-        <TextField fx:id="resultArea1" layoutX="80.0" layoutY="30.0" prefHeight="31.0" prefWidth="500.0" />
-        <Text fx:id="heading1" layoutX="1.0" layoutY="100.0" textAlignment="JUSTIFY" text="AMOUNT:" />
-        <TextField fx:id="resultArea" layoutX="80.0" layoutY="77.0" prefHeight="31.0" prefWidth="500.0" />
+        <Text fx:id="heading2" layoutX="1.0" layoutY="50.0"  textAlignment="JUSTIFY" text="ACCOUNT:"
+              style="-fx-font-weight: bold"/>
+        <TextField fx:id="resultArea1"   layoutX="80.0" layoutY="30.0" prefHeight="31.0" prefWidth="500.0"
+                   style="-fx-background-radius: 15; -fx-border-color: aquamarine; -fx-border-radius: 15" />
+        <Text fx:id="heading1" layoutX="1.0" layoutY="100.0" textAlignment="JUSTIFY" text="AMOUNT:"
+              style="-fx-font-weight: bold" />
+        <TextField fx:id="resultArea" layoutX="80.0" layoutY="77.0" prefHeight="31.0" prefWidth="500.0"
+                   style="-fx-background-radius: 15; -fx-border-color: aquamarine; -fx-border-radius: 15" />
 
-        <Button fx:id="CANCEL" layoutX="477.0" layoutY="144.0" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="81.0" text="Cancel" />
+        <Button fx:id="CANCEL"  style="-fx-background-color: #d0d2ff; -fx-background-radius: 10; " layoutX="350.0" layoutY="150.0" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="81.0" text="Cancel"/>
 
-        <Button fx:id="DEPOSIT" layoutX="30.0" layoutY="150.0" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="88.0" text="Enter" />
+        <Button fx:id="DEPOSIT" style="-fx-background-color:#d0d2ff; -fx-background-radius: 10" layoutX="150.0" layoutY="150.0" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="88.0" text="Enter" />
     </children>
 
 </AnchorPane>

@@ -36,7 +36,7 @@ public class Withdraw {
             String accountnumber=resultArea1.getText();
             assert accountnumber != null;
             assert entered != null;
-            if(entered.equals("") | entered.equals("\\d*") | accountnumber.equals("") | accountnumber.equals("\\d*"))
+            if(entered.equals("") | entered.matches("[a-z]*") | accountnumber.equals("") | accountnumber.matches("[a-z]*"))
             {
                 String title="ERROR";
                 String message="Enter Valid data types";

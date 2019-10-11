@@ -18,8 +18,8 @@ public class Commit {
         //Block events to other windows
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle("You sure G?");
-        window.setMinWidth(250);
-        window.setMinHeight(200);
+        window.setMinWidth(300);
+        window.setMinHeight(250);
 
         Label label = new Label();
         label.setText("Do you want to deposit ksh "+amt+" into account "+acc+" ?");
